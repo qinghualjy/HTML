@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Array</title>
+</head>
+<body>
+    <!-- 
+        JavaScript 中 Array对象用于定义数组。
+            定义
+                var 变量名 = new Array(元素列表); //方式一
+                var 变量名 = [ 元素列表 ]; //方式二
+            访问
+                arr[ 索引 ] = 值;
+
+        注意：JavaScript 中的数组相当于 Java 中集合，数组的长度是可变的，而 JavaScript 是弱类型，所以可以存储任意的类型的数据。
+
+        属性：
+            length：设置或返回数组中元素的数量。
+        方法：
+            forEach():遍历数组中的每个有值的元素，并调用一次传入的函数
+            push():将新元素添加到数组的末尾，并返回新的长度。
+            splice():从数组中删除元素。
+
+        箭头函数(ES6)：是用来简化函数定义语法的。具体形式为:  (…) => { … } ，如果需要给箭头函数起名字： var  xxx = (…) => { … }
+
+     -->
+     <script>
+        /* //定义数组法1
+        var arr=new Array(1,2,3,4);
+        //访问数组
+        console.log(arr[2]);
+        //定义数组法2
+        var arr1=[5,6,7,8];
+        console.log(arr1[2]);
+
+        //特点：长度可变 类型可变
+        arr1[20]=66;
+        console.log(arr1[20]);
+
+        console.log(arr1[6]);
+        console.log(arr1[8]);
+        console.log(arr1[10]);
+
+        arr1[9]="A";
+        arr[8]=true;
+
+        console.log(arr1); */
+
+        var arr = [1,2,3,4];
+        arr[10] = 50;
+        // for (let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+        // console.log("==================");
+
+        //forEach: 遍历数组中有值的元素
+        // arr.forEach(function(e){
+        //     console.log(e);
+        // })
+
+        // //ES6 箭头函数: (...) => {...} -- 简化函数定义
+        // arr.forEach((e) => {
+        //     console.log(e);
+        // }) 
+
+        //push: 添加元素到数组末尾
+        // arr.push(7,8,9);
+        // console.log(arr);
+
+        //splice: 删除元素
+        arr.splice(2,2);
+        console.log(arr);
+     </script>
+    
+</body>
+</html>

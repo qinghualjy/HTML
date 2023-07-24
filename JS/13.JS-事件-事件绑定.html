@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-事件</title>
+</head>
+<body>
+    <!-- 
+        事件监听：
+            事件：HTML事件是发生在HTML元素上的 “事情”。比如：
+                按钮被点击
+                鼠标移动到元素上
+                按下键盘按键
+            事件监听：JavaScript可以在事件被侦测到时 执行代码。
+        事件绑定：
+            方式一：通过 HTML标签中的事件属性进行绑定
+                <input type="button" onclick="on()" value="按钮1">
+
+                <script>
+                    function on(){
+                        alert('我被点击了!');
+                    }
+                </script>
+            方式二：通过DOM元素属性绑定
+                <input type="button" id="btn" value="按钮2">
+
+                <script>
+                    document.getElementById('btn').onclick=function(){
+                        alert('我被点击了!');
+                    }
+                </script>
+     -->
+
+     <input type="button" id="btn1" value="事件绑定1" onclick="on()">
+     <input type="button" id="bun2" value="事件绑定2">
+     
+     <script>
+        function on(){
+            alert("按钮1被点击了");
+        }
+
+        document.getElementById('bun2').onclick=function(){
+            alert("偶（按钮2）被点击啦！");
+        }
+     </script>
+</body>
+</html>

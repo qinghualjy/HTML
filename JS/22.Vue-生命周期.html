@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-生命周期</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <!-- 
+        生命周期：指一个对象从创建到销毁的整个过程。
+        生命周期的八个阶段：每触发一个生命周期事件，会自动执行一个生命周期方法(钩子)。
+        状态	                    阶段周期
+        beforeCreate	            创建前
+        created	                    创建后
+        beforeMount	                挂载前
+        mounted	                    挂载完成,Vue初始化成功，HTML页面渲染成功。（发送请求到服务端，加载数据）
+        beforeUpdate	            更新前
+        updated	                    更新后
+        beforeDestroy	            销毁前
+        destroyed	                销毁后
+     -->
+
+     <div id="app">
+
+     </div>
+</body>
+<script>
+    //定义Vue对象
+    new Vue({
+        el:"#app",//vue接管区域
+        data:{
+
+        },
+        methods: {
+            
+        },
+        mounted() {
+            alert("vue挂载完成，发送请求到服务端")
+        },
+    })
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-基础语法</title>
+</head>
+<body>
+    <!-- 
+        JavaScript 中用 var 关键字（variable的缩写）来声明变量
+        JavaScript是一门弱类型语言，变量可以存放不同类型的值
+        变量命名需要遵循如下规则：
+            组成字符可以是任何字母、数字、下划线（_）或美元符号（$)
+            数字不能开头
+            建议使用驼峰命名
+
+        ECMAScript 6 新增了let关键字来定义变量。它的用法类似于var，但是所声明的变量，只在let关键字所在的
+        代码块内有效，且不允许重复声明。
+        ECMAScript 6 新增了const关键字，用来声明一个只读的常量。一旦声明，常量的值就不能改变
+        
+     -->
+
+     <script>
+        //var定义变量
+        // var a=10;
+        // a="张三";
+        // alert(a);
+
+        //var定义变量的特点
+        //特点一：作用域比较大，全局变量
+        //特点二：可以重复定义的,会覆盖掉前面的定义
+        // {
+        //     var x=10;
+        //     var x="D"
+        // }
+        // alert(x);
+
+        //let定义变量 相当于定义了一个局部变量,且不能重复定义
+        // {
+        //     let a=3;
+        //     alert(a);
+        // }
+        //alert(a);
+
+        //const:相当于声明一个常量，不能被改变
+        const b=3.14;
+        //b=3.15;//改变后会报错
+        alert(b);
+
+       
+
+
+     </script>
+     
+</body>
+</html>

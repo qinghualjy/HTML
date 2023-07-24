@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-函数</title>
+</head>
+<body>
+    <!-- 
+        介绍：函数（方法）是被设计为执行特定任务的代码块。
+        定义：JavaScript 函数通过 function 关键字进行定义，语法为：
+            function functionName(参数1,参数2..){
+                //要执行的代码
+            }
+        定义方式二：
+            var functionName = function (参数1,参数2..){
+                //要执行的代码
+            }
+        注意：
+            形式参数不需要类型。因为JavaScript是弱类型语言
+            返回值也不需要定义类型，可以在函数内部直接使用return返回即可
+        调用：函数名称(实际参数列表)
+        注意：JS中，函数调用可以传递任意个数的参数。
+    -->
+    <script>
+        /* //定义函数法1
+        function add(a,b){
+            return a+b;
+        }
+
+        //函数调用
+        var result=add(10,20);
+        alert(result);
+ */
+        //定义函数法2
+        var add=function(a,b){
+            return a+b;
+        }
+
+        //函数调用
+        var result=add(10,20);
+        alert(result);
+
+    </script>
+    
+</body>
+</html>
